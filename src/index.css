@@ -16,7 +16,20 @@
 .animate-fade-in {
   animation: fade-in 1s ease-out forwards;
 }
+@keyframes matrix-rain {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
 
+.matrix-character {
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0;
+  animation: matrix-rain linear infinite;
+}
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
