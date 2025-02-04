@@ -80,7 +80,7 @@ function App() {
         />
         <div className="absolute inset-0 bg-black/5 backdrop-blur-[1px] z-[5]"></div>
         <div className="relative text-center space-y-6 px-4 z-10">
-          <h1 className="text-green-500 md:text-7xl font-bold animate-fade-in">
+          <h1 className="text-green-500 text-7xl font-bold animate-fade-in">
             NULL_<span className="text-green-500">BORN</span>
           </h1>
           <p className="text-xl md:text-2xl text-green-300 max-w-2xl mx-auto">
