@@ -1,8 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import CountUp from 'react-countup';
 import { Terminal, Shield, Flag, Users, ChevronDown, Github, Disc as Discord } from 'lucide-react';
 
 function App() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -51,6 +53,22 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const statsSection = document.querySelector('#stats-section');
+      const rect = statsSection?.getBoundingClientRect();
+      if (rect && rect.top < window.innerHeight && rect.bottom > 0) {
+        setHasAnimated(true);
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const scrollToFeatures = () => {
     document.querySelector('#features')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -80,7 +98,7 @@ function App() {
         />
         <div className="absolute inset-0 bg-black/5 backdrop-blur-[1px] z-[5]"></div>
         <div className="relative text-center space-y-6 px-4 z-10">
-          <h1 className="text-green-500 text-7xl font-bold animate-fade-in">
+          <h1 className="text-green-500 md:text-7xl font-bold animate-fade-in">
             NULL_<span className="text-green-500">BORN</span>
           </h1>
           <p className="text-xl md:text-2xl text-green-300 max-w-2xl mx-auto">
@@ -125,23 +143,31 @@ function App() {
       </section>
 
       {/* Community Stats */}
-      <section className="py-20 bg-gradient-to-b from-black to-green-950">
+      <section id="stats-section" className="py-20 bg-gradient-to-b from-black to-green-950">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-green-500">1000+</div>
+              <div className="text-4xl font-bold text-green-500">
+                {hasAnimated ? <CountUp end={1000} duration={2} suffix="+" /> : '0+'}
+              </div>
               <div className="text-green-300">Community Members</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-green-500">50+</div>
+              <div className="text-4xl font-bold text-green-500">
+                {hasAnimated ? <CountUp end={50} duration={2} suffix="+" /> : '0+'}
+              </div>
               <div className="text-green-300">CTF Challenges</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-green-500">24/7</div>
+              <div className="text-4xl font-bold text-green-500">
+                {hasAnimated ? <CountUp end={24} duration={2} suffix="/7" /> : '0/0'}
+              </div>
               <div className="text-green-300">Active Support</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-green-500">100+</div>
+              <div className="text-4xl font-bold text-green-500">
+                {hasAnimated ? <CountUp end={100} duration={2} suffix="+" /> : '0+'}
+              </div>
               <div className="text-green-300">Learning Resources</div>
             </div>
           </div>
