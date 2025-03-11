@@ -86,7 +86,7 @@ const Home: React.FC = () => {
                     <h1 className="text-green-500 text-5xl sm:text-6xl md:text-7xl font-bold animate-fade-in">
                         {`{₦uL`}
                         <img
-                            src="/src/images/flag.png"
+                            src="/images/flag.png"
                             alt="Icon"
                             className="inline-block w-12 h-14"
                             style={{
