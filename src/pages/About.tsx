@@ -2,11 +2,11 @@ import React from 'react';
 
 
 const teamMembers = [
-  { id: 1, name: "Codehat01", role: "Forensics Expert", batch: "Forensics", batch2: "Web", image: "/src/images/5.jpg" },
-  { id: 2, name: "0x4d", role: "PWN Specialist", batch: "PWN", batch2: "Game PWN", image: "/src/images/1.jpg" },
-  { id: 3, name: "vexo", role: "Reverse Engineer", batch: "Rev", batch2: "Mobile", image: "/src/images/2.jpg" },
-  { id: 4, name: "areus", role: "Cryptographer", batch: "Crypto", batch2: "Block Chain", image: "/src/images/4.jpg" },
-  { id: 5, name: "vaincleric", role: "OSINT Expert", batch: "OSINT", batch2: "MISC", image: "/src/images/3.jpg" }
+  { id: 1, name: "Codehat01", role: "Forensics Expert", batch: "Forensics", batch2: "Web", image: "/images/5.jpg" },
+  { id: 2, name: "0x4d", role: "PWN Specialist", batch: "PWN", batch2: "Game PWN", image: "/images/1.jpg" },
+  { id: 3, name: "vexo", role: "Reverse Engineer", batch: "Rev", batch2: "Mobile", image: "/images/2.jpg" },
+  { id: 4, name: "areus", role: "Cryptographer", batch: "Crypto", batch2: "Block Chain", image: "/images/4.jpg" },
+  { id: 5, name: "vaincleric", role: "OSINT Expert", batch: "OSINT", batch2: "MISC", image: "/images/3.jpg" }
 ];
 
 
@@ -45,7 +45,7 @@ const About: React.FC = () => {
             muted 
             loop
             playsInline>
-                <source src="/src/images/3.mp4" type="video/mp4" />
+                <source src="/images/3.mp4" type="video/mp4" />
                 <source src="/src/images/nullborn.MOV" type="video/quicktime" />
                 Your browser does not support the video tag.
               </video>
