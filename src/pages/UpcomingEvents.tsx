@@ -17,7 +17,7 @@ const EventsApp = () => {
       dates: "March 13-15, 2025",
       location: "In-person (SHIELD LAB)",
       description: "Join us for an intensive 3-day bootcamp covering all aspects of Capture The Flag competitions. Perfect for beginners and intermediate security enthusiasts looking to enhance their skills.",
-      image: "/src/images/bootcamp.jpg",
+      image: "/images/bootcamp.jpg",
       category: "workshop",
       timeline: [
         { day: "Day 1 (March 12)", focus: "About CTFs", 
