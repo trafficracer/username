@@ -1,11 +1,12 @@
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
-import { blogPosts } from '../data/blogPosts';
-import { useParams, Link } from 'react-router-dom';
+import { blogPosts } from '../data/blogPosts2';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 
 function BlogPost() {
   const { slug } = useParams();
+  const navigate = useNavigate();
   const post = blogPosts.find((p) => p.slug === slug);
 
   if (!post) {
@@ -14,7 +15,7 @@ function BlogPost() {
         <div className="text-center">
           <h1 className="text-4xl font-bold text-green-500 mb-4">404</h1>
           <p className="text-gray-400 mb-4">Blog post not found</p>
-          <Link to="/blog" className="text-green-500 hover:underline">
+          <Link to="/" className="text-green-500 hover:underline">
             Return home
           </Link>
         </div>
@@ -23,9 +24,9 @@ function BlogPost() {
   }
 
   return (
-    <article className="max-w-4xl mx-auto pt-64 pb-32 pl-6 pr-6">
+    <article className="max-w-4xl mx-auto">
       <Link 
-        to="/blog" 
+        to="/" 
         className="inline-flex items-center text-green-500 hover:text-green-400 transition-colors mb-8"
       >
         <ArrowLeft className="w-4 h-4 mr-2" />

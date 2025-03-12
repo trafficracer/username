@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface BlogCardProps {
   title: string;
@@ -12,7 +13,7 @@ interface BlogCardProps {
 function BlogCard({ title, subtitle, image, date, slug }: BlogCardProps) {
   return (
     <article className="bg-gray-900 rounded-lg overflow-hidden group hover:ring-2 hover:ring-green-500/50 transition-all duration-300">
-      <a href={`/blog/${slug}`} className="block">
+      <Link to={`/blog/${slug}`} className="block">
         <div className="relative h-[250px] overflow-hidden">
           <img 
             src={image}
@@ -32,7 +33,7 @@ function BlogCard({ title, subtitle, image, date, slug }: BlogCardProps) {
             <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-2" />
           </div>
         </div>
-      </a>
+      </Link>
     </article>
   );
 }
