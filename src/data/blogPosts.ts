@@ -106,17 +106,17 @@ Let's take a small C program, compile it, and analyze its assembly code.
 
 ### **C Code**
 
-![C Code Example](/src/images/CODE.jpg)
+![C Code Example](/public/images/CODE.jpg)
 
 ### **Compiling and Disassembling**
 
 To see the assembly output:
 
-![Compilation Process](/src/images/CODE2.jpg)
+![Compilation Process](/public/images/CODE2.jpg)
 
 ### **Assembly Output**
 
-![Assembly Output](/src/images/DEBUG.jpg)
+![Assembly Output](/public/images/DEBUG.jpg)
 
 
 This simple example shows function calls (\`call\`), stack operations (\`push\`, \`pop\`), and function return (\`ret\`).
