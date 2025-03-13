@@ -10,11 +10,11 @@ const Challenges: React.FC = () => {
       challenges: [
         {
           id: 1,
-          title: 'Buffer Overflow 101',
-          description: 'Classic stack-based buffer overflow vulnerability. Can you control the execution flow?',
+          title: 'Questionnaire',
+          description: "It's time to learn some things about binaries and basic c. Connect to a remote server and answer some questions to get the flag.",
           difficulty: 'Easy',
-          fileLink: '/challenges/pwn/buffer_overflow_101.zip',
-          hint: 'Try examining what happens when you send more than 64 bytes...'
+          fileLink: 'https://drive.usercontent.google.com/download?id=1MwsqTvUysJfczjusBWMRFU8Q-vwoxydN&export=download&authuser=0',
+          hint: 'no hints'
         }
       ]
     },
@@ -28,8 +28,8 @@ const Challenges: React.FC = () => {
           title: 'Flag casino',
           description: 'The team stumbles into a long-abandoned casino. As you enter, the lights and music whir to life, and a staff of robots begin moving around and offering games, while skeletons of prewar patrons are slumped at slot machines. A robotic dealer waves you over and promises great wealth if you can win - can you beat the house and gather funds for the mission?',
           difficulty: 'Easy',
-          fileLink: 'https://drive.google.com/file/d/1XUGiVZuTq-4jNE2XKZ7Xy-F_QKS_l5FZ/view?usp=sharing',
-          hint: 'no hint'
+          fileLink: 'https://drive.usercontent.google.com/download?id=1XUGiVZuTq-4jNE2XKZ7Xy-F_QKS_l5FZ&export=download&authuser=0&confirm=t&uuid=9178461f-b3c1-4e37-aae5-3da77221dd7d&at=AEz70l6VAL9PE4EoUWblAR9rKAhT%3A1741858155954',
+          hint: 'val = e.u32(e.sym["check"] + j * 4) <br /> e = ELF("./casino", checksec=False)'
         }
       ]
     },
@@ -55,26 +55,11 @@ const Challenges: React.FC = () => {
       challenges: [
         {
           id: 5,
-          title: 'SQL Injection',
-          description: 'Can you bypass the login by exploiting SQL injection?',
+          title: 'OnlyHacks Dating App',
+          description: "Dating and matching can be exciting especially during Valentine's, but it’s important to stay vigilant for impostors. Can you help identify possible frauds?",
           difficulty: 'Easy',
           fileLink: '/challenges/web/sql_injection',
-          hint: 'What happens if you use a single quote in the username field?'
-        }
-      ]
-    },
-    {
-      name: 'Web Exploitation',
-      description: 'Web application security challenges',
-      icon: <UnlockIcon size={20} />,
-      challenges: [
-        {
-          id: 5,
-          title: 'SQL Injection',
-          description: 'Can you bypass the login by exploiting SQL injection?',
-          difficulty: 'Easy',
-          fileLink: '/challenges/web/sql_injection',
-          hint: 'What happens if you use a single quote in the username field?'
+          hint: 'check input validation'
         }
       ]
     }
