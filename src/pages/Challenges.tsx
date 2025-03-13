@@ -15,14 +15,21 @@ const Challenges: React.FC = () => {
           difficulty: 'Easy',
           fileLink: '/challenges/pwn/buffer_overflow_101.zip',
           hint: 'Try examining what happens when you send more than 64 bytes...'
-        },
+        }
+      ]
+    },
+    {
+      name: 'REV',
+      description: 'rev challenge',
+      icon: <LockIcon size={20} />,
+      challenges: [
         {
-          id: 2,
-          title: 'Heap Exploitation',
-          description: 'Advanced heap exploitation challenge. Manipulate the heap to gain control.',
-          difficulty: 'Hard',
-          fileLink: '/challenges/pwn/heap_exploit.zip',
-          hint: 'Look for use-after-free vulnerabilities'
+          id: 1,
+          title: 'Flag casino',
+          description: 'The team stumbles into a long-abandoned casino. As you enter, the lights and music whir to life, and a staff of robots begin moving around and offering games, while skeletons of prewar patrons are slumped at slot machines. A robotic dealer waves you over and promises great wealth if you can win - can you beat the house and gather funds for the mission?',
+          difficulty: 'Easy',
+          fileLink: 'https://drive.google.com/file/d/1XUGiVZuTq-4jNE2XKZ7Xy-F_QKS_l5FZ/view?usp=sharing',
+          hint: 'no hint'
         }
       ]
     },
@@ -33,19 +40,11 @@ const Challenges: React.FC = () => {
       challenges: [
         {
           id: 3,
-          title: 'Hidden Secrets',
-          description: 'There\'s something hidden in this image. Can you find it?',
+          title: 'letsgooooo',
+          description: 'Which iconic hippie van from Cars shares its name with a historic San Francisco district known for jazz and counterculture?',
           difficulty: 'Medium',
-          fileLink: '/challenges/forensics/hidden_secrets.jpg',
-          hint: 'Have you tried looking at the image in a hex editor?'
-        },
-        {
-          id: 4,
-          title: 'Memory Dump Analysis',
-          description: 'Analyze this memory dump to find traces of the attacker.',
-          difficulty: 'Hard',
-          fileLink: '/challenges/forensics/memory.dmp',
-          hint: 'Volatility might be useful here'
+          fileLink: 'https://drive.google.com/file/d/1fGjKvjJYAZ_gpI79yuch6HAiApV_W0xu/view?usp=sharing',
+          hint: 'Do you know about cars movie?'
         }
       ]
     },
@@ -61,14 +60,21 @@ const Challenges: React.FC = () => {
           difficulty: 'Easy',
           fileLink: '/challenges/web/sql_injection',
           hint: 'What happens if you use a single quote in the username field?'
-        },
+        }
+      ]
+    },
+    {
+      name: 'Web Exploitation',
+      description: 'Web application security challenges',
+      icon: <UnlockIcon size={20} />,
+      challenges: [
         {
-          id: 6,
-          title: 'XSS Challenge',
-          description: 'Exploit cross-site scripting to steal the admin\'s cookie.',
-          difficulty: 'Medium',
-          fileLink: '/challenges/web/xss_challenge',
-          hint: 'The comment section doesn\'t sanitize user input properly'
+          id: 5,
+          title: 'SQL Injection',
+          description: 'Can you bypass the login by exploiting SQL injection?',
+          difficulty: 'Easy',
+          fileLink: '/challenges/web/sql_injection',
+          hint: 'What happens if you use a single quote in the username field?'
         }
       ]
     }
