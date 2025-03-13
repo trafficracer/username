@@ -3,21 +3,21 @@ import { LockIcon, UnlockIcon,FileIcon, ChevronRight } from 'lucide-react';
 
 const Challenges: React.FC = () => {
   const categories = [
+{
+  name: 'Crypto',
+  description: 'Cryptographic challenges',
+  icon: <LockIcon size={20} />,
+  challenges: [
     {
-      name: 'Pwn',
-      description: 'Binary exploitation challenges',
-      icon: <LockIcon size={20} />,
-      challenges: [
-        {
-          id: 1,
-          title: 'Questionnaire',
-          description: "It's time to learn some things about binaries and basic c. Connect to a remote server and answer some questions to get the flag.",
-          difficulty: 'Easy',
-          fileLink: 'https://drive.usercontent.google.com/download?id=1MwsqTvUysJfczjusBWMRFU8Q-vwoxydN&export=download&authuser=0',
-          hint: 'no hints'
-        }
-      ]
-    },
+      id: 4,
+      title: 'Small RSA Attack',
+      description: "Break a weak RSA configuration using a small RSA vulnerability. Analyze the given encrypted data and recover the flag.",
+      difficulty: 'Easy',
+      fileLink: 'https://drive.google.com/uc?export=download&id=1yIezgTz4RJvsX3K-9yboYqq--xSk1nEj',
+      hint: 'no hints'
+    }
+  ]
+},
     {
       name: 'REV',
       description: 'rev challenge',
