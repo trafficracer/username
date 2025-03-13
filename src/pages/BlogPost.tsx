@@ -24,7 +24,7 @@ function BlogPost() {
   }
 
   return (
-    <article className="max-w-4xl mx-auto">
+    <article className="max-w-4xl mx-auto pt-64 pb-32 pl-6 pr-6">
       <Link 
         to="/" 
         className="inline-flex items-center text-green-500 hover:text-green-400 transition-colors mb-8"
