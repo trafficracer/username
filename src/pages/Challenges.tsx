@@ -43,7 +43,7 @@ const Challenges: React.FC = () => {
           title: 'letsgooooo',
           description: 'Which iconic hippie van from Cars shares its name with a historic San Francisco district known for jazz and counterculture?',
           difficulty: 'Medium',
-          fileLink: 'https://drive.google.com/file/d/1fGjKvjJYAZ_gpI79yuch6HAiApV_W0xu/view?usp=sharing',
+          fileLink: 'https://drive.usercontent.google.com/download?id=1fGjKvjJYAZ_gpI79yuch6HAiApV_W0xu&export=download&authuser=0&confirm=t&uuid=8523d98e-6d3e-4399-860c-c248e5c222f1&at=AEz70l7IEChF2GyXhFJi4Mcr43ug%3A1741856127551',
           hint: 'Do you know about cars movie?'
         }
       ]
